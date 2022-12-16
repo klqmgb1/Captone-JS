@@ -84,9 +84,3 @@ function renderCart(data) {
 
 //add
 
-document.getElementsByClassName("add-btn").onclick = function(){
-    var cart = []
-        
-}
-
-

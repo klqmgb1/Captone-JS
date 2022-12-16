@@ -266,7 +266,14 @@
   top: 0;
   right: 0;
 }
-
+.deloylayout{
+  color: black;
+  padding: 10px 10px;
+  width: max-content;
+  background-color: #ffff;
+  border-radius: 20px;
+  position: absolute;
+}
 
 
 
