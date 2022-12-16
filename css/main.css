@@ -1,0 +1,293 @@
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  overflow: hidden;
+}
+
+.app .card {
+  position: relative;
+  flex-shrink: 0;
+  height: 300px;
+  width: 200px;
+  background-color: #010101;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 7px 5px -5px #4d4b4b;
+  transition: 0.5s;
+}
+.app .main-cart {
+  position: absolute;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  align-self: center;
+  align-items: center;
+}
+.app .card .img-container img {
+  width: 100%;
+  align-self: center;
+}
+.app .card .img-container .out-of-stock-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.app .top-bar, .app .name-fav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
+}
+.app .top-bar .stocks, .app .name-fav .stocks {
+  color: white;
+}
+.app .top-bar i, .app .name-fav i {
+  color: white;
+}
+.product-name{
+  color: white;
+}
+.name-fav button{
+  background-color: #2e2f33;
+  border: none;
+}
+.name-fav{
+  margin: 22px 0px;
+}
+.name-fav i{
+  color: white;
+  background-color: #2e2f33;
+}
+.top-bar{
+  padding-bottom: 10px;
+}
+.details{
+  position: absolute;
+  height: 73%;
+  width: 100%;
+  background-color: #2e2f33;
+  display: flex;
+  /* padding: 20px; */
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: -140px;
+  transition: 0.25s;
+}
+
+.wrapper{
+  color: white;
+  padding:  5px 0px;
+}
+.card:hover{
+  transition: all 1s;
+  transform: scale(1.5);
+}
+.purchase{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.purchase p{
+  text-align: center;
+  color: white;
+  margin-top: 6%;
+}
+.card:hover .wrapper {
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* transform: translateY(5px); */
+  display: none;
+}
+.main-cart {
+  position: absolute;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  align-self: center;
+  align-items: center;
+}
+.main-cart .card:hover {
+  height: 450px;
+  width: 260px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
+.card:hover .purchase {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 90%;
+  top: 0;
+  margin-top: -60%;
+}
+.card:hover .wrapper{
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50%;
+  margin-top: -20px;
+}
+
+.card:hover .wrapper span{
+  font-size: 12px;
+  padding: 0px 15px;
+}
+.details .purchase .add-btn {
+  border-radius: 20px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  /* padding: 6px 10px; */
+}
+
+#selectoption{
+  position: absolute;
+  right: 50px;
+  top: 20%;
+  font-size: 16px;
+  padding: 2px 2px;
+  border-radius: 5px;
+}
+
+.nav{
+  display: flex;
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  color: #010101;
+}
+.nav button{
+  background-color: transparent;
+  border: none;
+}
+.nav span{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  padding: 0px 3px;
+  border-radius: 50%;
+  color: black;
+}
+.heart:focus i{
+  color: red;
+}
+.side-nav {
+  position: absolute;
+  background: #010101;
+  opacity: 0.95;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.side-nav .xoa{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: white;
+}
+.side-nav h2{
+  text-align: center;
+  color: white;
+  padding: 1rem ;
+}
+.side-nav div span{
+  display: flex;
+  text-align: center;
+  color: #3e3e3e;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 10px 4rem;
+}
+.action .buy{
+  position: absolute;
+  bottom: 2rem;
+  right: 14rem;
+  border: 2px solid #3e3e3e;
+}
+.action .buy:hover{
+  background-color: white;
+  color: black;
+}
+.action .clear{
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+  border: 2px solid #3e3e3e;
+}.action .clear:hover{
+  background-color: white;
+  color: black;
+}
+.action button{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 10px ;
+}
+.final strong{
+  position: absolute;
+  bottom: 8rem;
+  right: 8rem;
+  color: white;
+}
+.final strong .total{
+  color: white;
+  position: absolute;
+  bottom: -22px;
+  right: -100px;
+  font-weight: 500;
+}
+#myModal{
+  left: 40%;
+  right: 0 !important;
+}
+.modal-backdrop{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */

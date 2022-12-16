@@ -1,0 +1,47 @@
+.app .card {
+  position: relative;
+  flex-shrink: 0;
+  height: 300px;
+  width: 200px;
+  background-color: #010101;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 7px 5px -5px #4d4b4b;
+  transition: 0.5s;
+}
+.app .main-cart {
+  position: absolute;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  align-self: center;
+  align-items: center;
+}
+.app .card .img-container img {
+  width: 100%;
+  align-self: center;
+}
+.app .card .img-container .out-of-stock-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.app .top-bar, .app .name-fav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
+}
+.app .top-bar .stocks, .app .name-fav .stocks {
+  color: white;
+}
+.app .top-bar i, .app .name-fav i {
+  color: white;
+}/*# sourceMappingURL=content.css.map */
